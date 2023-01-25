@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Svetlana2505/goit-react-hw-08-phonebook.git/static/css/main.b9f2312e.css",
+    "main.js": "/Svetlana2505/goit-react-hw-08-phonebook.git/static/js/main.2ad9a8f7.js",
+    "static/media/6.jpg": "/Svetlana2505/goit-react-hw-08-phonebook.git/static/media/6.1c8b6c621af8cc695a02.jpg",
+    "index.html": "/Svetlana2505/goit-react-hw-08-phonebook.git/index.html",
+    "main.b9f2312e.css.map": "/Svetlana2505/goit-react-hw-08-phonebook.git/static/css/main.b9f2312e.css.map",
+    "main.2ad9a8f7.js.map": "/Svetlana2505/goit-react-hw-08-phonebook.git/static/js/main.2ad9a8f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9f2312e.css",
+    "static/js/main.2ad9a8f7.js"
+  ]
+}
