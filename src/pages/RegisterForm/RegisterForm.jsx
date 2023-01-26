@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/auth-operations';
 import { Button, Box } from './RegisterForm.styled';
 
-export const RegisterForm = () => {
+const RegisterForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -77,3 +77,4 @@ export const RegisterForm = () => {
     </Box>
   );
 };
+export default RegisterForm;

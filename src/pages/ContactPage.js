@@ -6,12 +6,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchContacts } from 'redux/contact/contacts-operations';
 import { FcBusinesswoman } from 'react-icons/fc';
-
 import { selectError, selectIsLoading } from '../redux/contact/selectors';
 
-export const ContactPage = () => {
+const ContactPage = () => {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectIsLoading);
+
   const error = useSelector(selectError);
 
   useEffect(() => {
@@ -33,3 +33,4 @@ export const ContactPage = () => {
     </div>
   );
 };
+export default ContactPage;

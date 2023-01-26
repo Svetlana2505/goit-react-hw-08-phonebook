@@ -6,7 +6,7 @@ import { selectError } from 'redux/auth/auth-selectors';
 import { Alert } from '@mui/material';
 import { Box, Button } from './LoginForm.styled';
 
-export const LoginForm = () => {
+const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const error = useSelector(selectError);
@@ -70,3 +70,4 @@ export const LoginForm = () => {
     </>
   );
 };
+export default LoginForm;

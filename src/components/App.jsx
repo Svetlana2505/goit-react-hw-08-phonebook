@@ -1,23 +1,25 @@
 import { Routes, Route } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, lazy } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { HomePage } from '../pages/HomePage/HomePage.jsx';
-import { ContactPage } from '../pages/ContactPage';
-import { LoginForm } from '../pages/LoginForm/LoginForm';
-// import { RegisterForm } from '../pages/RegisterForm/RegisterForm';
+
 import { Layout } from './Layout/Layout';
 import { fetchCurrentUser } from '../redux/auth/auth-operations';
 import { PrivateRoute } from '../Route/PrivateRoute';
 import { PublicRoute } from '../Route/PublicRoute';
 import { selectisFetchCurrentUser } from '../redux/auth/auth-selectors';
-import { Register } from '../pages/RegisterForm/Register';
+
 
 import Particle from './Particles/Particles.jsx';
+
+const HomePage = lazy(() => import('pages/HomePage/HomePage.jsx'));
+const ContactPage = lazy(() => import('pages/ContactPage'));
+const LoginForm = lazy(() => import('pages/LoginForm/LoginForm'));
+const Register = lazy(() => import('pages/RegisterForm/Register'));
 
 export const App = () => {
   const dispatch = useDispatch();
   const currentUser = useSelector(selectisFetchCurrentUser);
-
+ 
   useEffect(() => {
     dispatch(fetchCurrentUser());
   }, [dispatch]);

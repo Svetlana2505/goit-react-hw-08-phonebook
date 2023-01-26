@@ -1,10 +1,11 @@
-import { RegisterForm } from './RegisterForm';
+import RegisterForm from './RegisterForm';
 import { Box } from './Register.styled';
 
-export const Register = () => {
+const Register = () => {
   return (
     <Box>
       <RegisterForm />
     </Box>
   );
 };
+export default Register;

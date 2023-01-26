@@ -1,9 +1,10 @@
 import { Text } from './HomePage.styled';
-
-export const HomePage = () => {
+const HomePage = () => {
   return (
     <>
       <Text>Phonebook</Text>
     </>
   );
 };
+
+export default HomePage;

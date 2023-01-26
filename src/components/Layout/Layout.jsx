@@ -7,6 +7,7 @@ import { Navigation } from 'components/Navigation/Navigation';
 import { AuthNavigation } from 'components/AuthNavigation/AuthNavigation';
 import { UserMenu } from 'components/UserMenu/UserMenu';
 import { Container } from '@mui/system';
+import { Suspense } from 'react';
 
 export const Layout = () => {
   const token = useSelector(selectToken);
@@ -33,7 +34,9 @@ export const Layout = () => {
 
       <main>
         <Container sx={{ mt: '2em' }}>
-          <Outlet />
+          <Suspense>
+            <Outlet />
+          </Suspense>
         </Container>
       </main>
     </>
