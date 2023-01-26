@@ -31,6 +31,7 @@ const authSlice = createSlice({
       })
       .addCase(fetchCurrentUser.rejected, state => {
         state.isFetchingCurrentUser = false;
+        state.token = null;
       })
       .addMatcher(
         isAnyOf(register.fulfilled, login.fulfilled),
